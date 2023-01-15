@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <div>  
+    <table class="table" id="diet">
+        <thead>
+          <tr>
+            <th scope="col">Food</th>
+            <th scope="col">Calories</th>
+            <th scope="col">Protein</th>
+            <th scope="col">Carbs</th>
+            <th scope="col">Fat</th>
+            <th scope="col">Entry</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="exampleFood">Food</label>
+          <input type="food" class="form-control" id="exampleFood" aria-describedby="foodHelp" placeholder="Enter food">
+        </div>
+        <div class="form-group">
+          <label for="exampleCalories">Calories</label>
+          <input type="calories" class="form-control" id="exampleCalories" placeholder="Enter Calories">
+        </div>
+        <div class="form-group">
+          <label for="exampleProtein">Protein</label>
+          <input type="protein" class="form-control" id="exampleProtein" aria-describedby="proteinHelp" placeholder="Enter protein">
+        </div>
+        <div class="form-group">
+          <label for="exampleCarbs">Carbs</label>
+          <input type="carbs" class="form-control" id="exampleCarbs" placeholder="Enter Carbs">
+        </div>        
+        <div class="form-group">
+          <label for="exampleFat">Fat</label>
+          <input type="fat" class="form-control" id="exampleFat" placeholder="Enter Fat">
+        </div>
+      </form>
+      <button id="submitbtn" class="btn btn-primary">Submit</button>
+    </div><br>
+    
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="exampleUpdatedFood">Food</label>
+          <input type="updatedfood" class="form-control" id="exampleUpdatedFood" aria-describedby="foodHelp" placeholder="Updated food">
+        </div>
+        <div class="form-group">
+          <label for="exampleUpdatedCalories">Calories</label>
+          <input type="updatedcalories" class="form-control" id="exampleUpdatedCalories" placeholder="Updated Calories">
+        </div>
+        <div class="form-group">
+          <label for="exampleUpdatedProtein">Protein</label>
+          <input type="updatedprotein" class="form-control" id="exampleUpdatedProtein" aria-describedby="proteinHelp" placeholder="Updated protein">
+        </div>
+        <div class="form-group">
+          <label for="exampleUpdatedCarbs">Carbs</label>
+          <input type="updatedcarbs" class="form-control" id="exampleUpdatedCarbs" placeholder="Updated Carbs">
+        </div>        
+        <div class="form-group">
+          <label for="exampleUpdatedFat">Fat</label>
+          <input type="updatedfat" class="form-control" id="exampleUpdatedFat" placeholder="Updated Fat">
+        </div>        
+        <div class="form-group">
+          <label for="exampleUpdatedId">Entry #</label>
+          <input type="updatedid" class="form-control" id="exampleUpdatedId" placeholder="Entry">
+        </div>
+      </form>
+      <button id="updatebtn" class="btn btn-primary">Update</button>
+    </div><br>
+
+    <div>
+      <input type="deleteinput" class="form-control" id="exampleDelete" placeholder="Delete by entry #">
+      <button id="deletebtn" class="btn btn-primary">Delete</button>
+    </div><br>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="fitness.js"></script>
+</body>
+</html>
